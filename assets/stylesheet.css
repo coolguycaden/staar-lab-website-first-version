@@ -1,0 +1,87 @@
+
+/*  FONTS */
+
+.arsenal-sc-regular {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.arsenal-sc-bold {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.arsenal-sc-regular-italic {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+ 
+.arsenal-sc-bold-italic {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+  
+
+/* NAVIGATION BAR | HOME BAR */
+
+.navigation-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+
+.navigation-img-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.staar-logo {
+    width: 80px;
+    height: 50px;
+}
+
+.group-name {
+    padding-left: 30px; 
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.navigation-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-button-format {
+    padding-right: 20px;
+}
+
+.home-button {
+
+}
+
+.professors-button {
+
+}
+
+.naviagtion-dropdown-button {
+    padding-right: 5px;
+}
+
+.navigation-dropdown-icon {
+    display: contents;
+    position: relative;
+}
+
+.team-button {
+    
+}
