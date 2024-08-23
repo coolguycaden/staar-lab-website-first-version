@@ -25,32 +25,40 @@
     font-style: italic;
 }
   
+/* MAIN BODY */
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* NAVIGATION BAR | HOME BAR */
 
 .navigation-bar {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    margin: 5px;
-    padding: 5px;
+    margin-top: 10px;
+    padding: 0px;
 }
 
 .navigation-img-text {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    
 }
 
 .staar-logo {
     width: 80px;
     height: 50px;
+    margin-top: 3px;
+    margin-left: 3px;
 }
 
 .group-name {
-    padding-left: 30px; 
+    padding-left: 15px; 
     font-family: "Arsenal SC", sans-serif;
     font-weight: 200;
     font-size: 25px;
@@ -59,6 +67,7 @@
 .navigation-buttons {
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
 }
 
 .navigation-button-format {
@@ -73,18 +82,36 @@
 
 }
 
-.naviagtion-dropdown-button {
-    padding-right: 5px;
-}
-
-.navigation-dropdown-icon {
-    display: contents;
-    position: relative;
-}
-
 .team-button {
     
 }
+
+.research-button {
+
+}
+
+.navigation-dropdown-button {
+    margin-right: 5px;
+    padding-left: 20px;
+}
+
+.navigation-dropdown-icon {
+    position: relative;
+    padding-left: 5px;
+}
+
+.navigation-hover-box {
+    display: flex;
+}
+
+.team-button-hover {
+    display: none;
+}
+
+.research-button-hover {
+    display: none;
+}
+
 
 /* MEDIA QUERY | RESPONSIVE DESIGN*/
 

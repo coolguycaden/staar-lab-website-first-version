@@ -13,8 +13,7 @@
         <link rel="stylesheet" href="./assets/stylesheet.css">
         <link rel="icon" href="assets/pictures/STAAR-LAB-LOGO/RGB/STAARlab_L4_Logo_RGB.png">
         
-        <!-- Import Button On Click Functions -->
-        <script type= "text/javascript" src="./all_java.js"></script>
+        
 
         <!-- Import FontAwesome Kit -->
         <script src="https://kit.fontawesome.com/a1a314630b.js" crossorigin="anonymous"></script>
@@ -25,7 +24,7 @@
         </style>
     </head>
 
-    <body>
+    <body class="main-body">
         <header class="navigation-bar">
 
             <div class="navigation-img-text">
@@ -34,9 +33,7 @@
             </div>
             
             <div class="navigation-buttons">
-                <text class="navigation-button-format home-button" 
-                    onclick="printClick()"
-                >
+                <text class="navigation-button-format home-button">
                     Home
                 </text>
 
@@ -44,18 +41,32 @@
                     Professors
                 </text>
                 
-                <div class="navigation-dropdown-button team-button">
-                    <text
-                        onmouseover="hovered()"
-                    >
+                <div class="navigation-dropdown-format team-button">
+                    <text>
                         Team
                     </text>
-                    <i class="fa-solid fa-angle-down navigation-dropdown-icon"></i>
+                    <i class="navigation-dropdown-icon fa-solid fa-angle-down"></i>
+                    <div class="navigation-hover-box team-button-hover">
+                        <text>hi</text>
+                    </div>
                 </div>
 
+                <div class="navigation-dropdown-format research-button">
+                    <text>
+                        Research
+                    </text>
+                    <i class="fa-solid fa-angle-down navigation-dropdown-icon"></i>
+                    <div class="research-button-hover">
+                        <text>hi</text>
+                    </div>
+                </div>
+
+
             </div>
+            <div class="line">
         </header>
         
-       
+       <!-- Import Java Functions -->
+       <script type= "text/javascript" src="./all_java.js"></script>
     </body>
 </html>
