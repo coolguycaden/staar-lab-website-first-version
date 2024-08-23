@@ -11,6 +11,7 @@
 //Organized by the following categories (use CLTR + F and search category names)
 // HOVER DROPDOWN ICONS FUNCTIONALITY
 // MEDIA QUERIES | RESPONSIVE DESIGN
+// ROTATING GALLERY
 
 
 
@@ -87,4 +88,22 @@ viewportSize.addEventListener("change", function() {
 })
 
 // :) End of commenting for above section
+
+
+
+/* ROTATING GALLERY */
+
+const IMAGE_LOCATION = "./gallery-pictures/img-";
+const NUMBER_OF_IMAGES = 1;
+
+
+async function rotateImages() {
+    var i = 0;
+    while(i !== NUMBER_OF_IMAGES){
+        await new Promise(r => setTimeout(r, 1000));
+        console.log("waited");
+        document.getElementsByClassName("rotating-image")[0].setAttribute("src", IMAGE_LOCATION + {i});
+    }
+}
+
 
