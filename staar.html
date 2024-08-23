@@ -24,7 +24,7 @@
         </style>
     </head>
 
-    <body class="main-body">
+    <body>
         <header class="navigation-bar">
 
             <div class="navigation-img-text">
@@ -33,13 +33,17 @@
             </div>
             
             <div class="navigation-buttons">
-                <text class="navigation-button-format home-button">
-                    Home
-                </text>
-
-                <text class="navigation-button-format professors-button">
-                    Professors
-                </text>
+                <div class="navigation-button-format home-button">
+                    <text>
+                        Home
+                    </text>
+                </div>
+                
+                <div class="navigation-button-format professors-button">
+                    <text>
+                        Professors
+                    </text>
+                </div>
                 
                 <div class="navigation-dropdown-format team-button">
                     <text>
@@ -61,10 +65,41 @@
                     </div>
                 </div>
 
+                <div class="navigation-dropdown-format publications-button">
+                    <text>
+                        Publications
+                    </text>
+                    <i class="fa-solid fa-angle-down navigation-dropdown-icon"></i>
+                    <div class="publications-button-hover">
+                        <text>hi</text>
+                    </div>
+                </div>
 
+                <div class="navigation-button-format funding-button">
+                    <text>
+                        Funding
+                    </text>
+                </div>
+
+                <div class="navigation-button-format gallery-button">
+                    <text>
+                        Gallery
+                    </text>
+
+                </div>
+
+                
             </div>
-            <div class="line">
+            
         </header>
+        
+        <div class="content-body">
+            <div class="home-welcome-text">
+                <text>
+                    Welcome to STAAR LAB in the Department of ... of Clemson University! 
+                </text>
+            </div>
+        </div>
         
        <!-- Import Java Functions -->
        <script type= "text/javascript" src="./all_java.js"></script>

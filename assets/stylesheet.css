@@ -105,12 +105,28 @@
 }
 
 .team-button-hover {
-    display: none;
+    
 }
 
 .research-button-hover {
-    display: none;
+    
 }
+
+
+/* MAIN CONTENT */
+
+.content-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.home-welcome-text {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+
 
 
 /* MEDIA QUERY | RESPONSIVE DESIGN*/

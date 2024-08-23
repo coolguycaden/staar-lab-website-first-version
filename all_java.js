@@ -29,7 +29,7 @@
 //var contextMenuForTeam = document.getElementById("team-button");
 
 
-window.addEventListener("DOMContentLoaded", (event) => {
+/*window.addEventListener("DOMContentLoaded", (event) => {
     const NAVIGATION_BUTTONS = ["team-button", "research-button"]
     NAVIGATION_BUTTONS.forEach((element) => 
         document.getElementsByClassName(element)[0]
@@ -38,7 +38,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
         })
     );
         
-});
+});*/
+
 //const NAVIGATION_BUTTONS_HOVER = ["team-button-hover", "research-button-hover"];
 //NAVIGATION_BUTTONS_HOVER.forEach((element) => document.getElementById(element).setAttribute("display", "none"));
 
