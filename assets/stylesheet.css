@@ -67,11 +67,13 @@
 .navigation-buttons {
     display: flex;
     flex-direction: row;
+    width: 45%;
     margin-top: 30px;
 }
 
 .navigation-button-format {
-    padding-right: 20px;
+    padding-right: 45px;
+    font-size: 16px;
 }
 
 .home-button {
@@ -90,6 +92,8 @@
 
 }
 
+/* NAVIGATION BAR HOVER EFFECTS */
+
 .navigation-dropdown-button {
     margin-right: 5px;
     padding-left: 20px;
@@ -98,34 +102,42 @@
 .navigation-dropdown-icon {
     position: relative;
     padding-left: 5px;
+    padding-right: 20px;
 }
 
 .navigation-hover-box {
     display: flex;
+
 }
 
 .team-button-hover {
-    
+    opacity: 0;
 }
 
-.research-button-hover {
-    
+.team-button:hover .team-button-hover{
+    opacity: 1;
 }
-
 
 /* MAIN CONTENT */
 
 .content-body {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .home-welcome-text {
     font-size: 19px;
     font-weight: bold;
+    position: absolute;
 }
 
+.rotating-image {
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+
+}
 
 
 

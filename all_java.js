@@ -44,19 +44,6 @@
 //const NAVIGATION_BUTTONS_HOVER = ["team-button-hover", "research-button-hover"];
 //NAVIGATION_BUTTONS_HOVER.forEach((element) => document.getElementById(element).setAttribute("display", "none"));
 
-
-function printClick(){
-    console.log("clicked!");
-}
-
-function hovered(elementClassName){
-    var result = document.getElementsByClassName(elementClassName)[0]
-    result.setAttribute("display", "none");
-    console.log(result.getAttribute("display"));
-    
-    
-}
-
 // :/ End of commenting for above section
 
 
@@ -94,16 +81,21 @@ viewportSize.addEventListener("change", function() {
 /* ROTATING GALLERY */
 
 const IMAGE_LOCATION = "./gallery-pictures/img-";
-const NUMBER_OF_IMAGES = 1;
+const NUMBER_OF_IMAGES = 2;
 
 
 async function rotateImages() {
-    var i = 0;
-    while(i !== NUMBER_OF_IMAGES){
-        await new Promise(r => setTimeout(r, 1000));
-        console.log("waited");
-        document.getElementsByClassName("rotating-image")[0].setAttribute("src", IMAGE_LOCATION + {i});
+    var i = 1;
+    while(i < NUMBER_OF_IMAGES){
+        var newImage = IMAGE_LOCATION + i;
+        console.log("new image is: " + newImage)
+        document.getElementsByClassName("rotating-image")[0].setAttribute("src", newImage + ".png");
+        //await new Promise(r => setTimeout(r, 3000));
+        i++;
     }
+    //rotateImages();
 }
+
+rotateImages();
 
 
