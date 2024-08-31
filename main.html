@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- This is the title of website, and thus the name that shows
+             up on the browser tab -->
         <title>STAAR LAB</title>
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Imports style -->
         <link rel="stylesheet" href="./assets/stylesheet.css">
+
+        <!-- This is the icon for the browser tab when you are on this website.
+             To change icon, change the property 'href' below-->
         <link rel="icon" href="assets/pictures/STAAR-LAB-LOGO/RGB/STAARlab_L4_Logo_RGB.png">
         
-        
-
         <!-- Import FontAwesome Kit -->
         <script src="https://kit.fontawesome.com/a1a314630b.js" crossorigin="anonymous"></script>
         
@@ -22,11 +25,15 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         </style>
+
     </head>
 
-    <body>
-        <header class="navigation-bar">
+    <body style="display: block;" onload="rotateImages()">
 
+
+        <nav class="navigation-bar">
+
+            <!-- This is the logo in the top right of the website + the lab name-->
             <div class="navigation-img-text">
                 <img src="assets/pictures/STAAR-LAB-LOGO/RGB/STAARlab_L4_Logo_RGB.jpg" alt="" class="staar-logo">
                 <h1 class="group-name">STAAR LAB</h1>
@@ -34,14 +41,14 @@
             
             <div class="navigation-buttons">
                 <div class="navigation-button-format home-button">
-                    <text>
+                    <a href="home.html">
                         Home
-                    </text>
+                    </a>
                 </div>
                 
                 <div class="navigation-button-format professors-button">
                     <text>
-                        Professors
+                        Professor
                     </text>
                 </div>
                 
@@ -50,9 +57,11 @@
                         Team
                     </text>
                     <i class="navigation-dropdown-icon fa-solid fa-angle-down"></i>
-                    <div class="navigation-hover-box team-button-hover">
-                        <text>Alumni <br>Graduates <br> Undergraduates</text>
-                    </div>
+                    <ul class="navigation-hover-box team-button-hover">
+                        <li><a href="">Graduates</a></li>
+                        <li><a href="">Alumni</a></li>
+                        <li><a href="">Undergraduates</a></li>
+                    </ul>
                 </div>
 
                 <div class="navigation-dropdown-format research-button">
@@ -60,9 +69,11 @@
                         Research
                     </text>
                     <i class="fa-solid fa-angle-down navigation-dropdown-icon"></i>
-                    <div class="research-button-hover">
-                        <text>Published Works <br> In progress Works</text>
-                    </div>
+                    <ul class="navigation-hover-box research-button-hover">
+                        <li><a href="">Themes</a></li>
+                        <li><a href="">Published Works</a></li>
+                        <li><a href="">Alumni</a></li>
+                    </ul>
                 </div>
 
                 <div class="navigation-dropdown-format publications-button">
@@ -91,19 +102,20 @@
                 
             </div>
             
-        </header>
+        </nav>
         
-        <div class="content-body">
-            <div class="home-welcome-text">
-                <text>
+        <header class="main-content-header">
+            <section class="home-welcome">
+                <text class="home-welcome-text">
                     Welcome to STAAR LAB in the Department of ... of Clemson University! 
                 </text>
-            </div>
 
-            <div class="rotating-image-gallery">
-                <img src="" alt="" class="rotating-image" onloadstart=rotateImages()>
-            </div>
-        </div>
+                <!-- ID here is VERY IMPORTANT for rotateImages() to work properly -->
+                <img id="rotating-image" alt="" class="home-welcome-rotating-image">
+            </section>
+
+            
+        </header>
         
        <!-- Import Java Functions -->
        <script type= "text/javascript" src="./all_java.js"></script>

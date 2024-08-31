@@ -41,6 +41,8 @@
     justify-content: space-between;
     margin-top: 10px;
     padding: 0px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .navigation-img-text {
@@ -106,11 +108,11 @@
 }
 
 .navigation-hover-box {
-    display: flex;
-
-}
-
-.team-button-hover {
+    display: block;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     opacity: 0;
 }
 
@@ -120,22 +122,35 @@
 
 /* MAIN CONTENT */
 
-.content-body {
-    display: flex;
+.main-content-header {
+    display: grid;
     justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 80%;
+}
+
+.home-welcome {
+    justify-content: space-around;
+    align-items: center;
 }
 
 .home-welcome-text {
+    display: flex;
     font-size: 19px;
     font-weight: bold;
-    position: absolute;
-}
-
-.rotating-image {
+    width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.home-welcome-rotating-image {
+    display: flex;
+    align-items: center;
+    position: relative;
     height: 300px;
     width: 300px;
+    
 
 }
 

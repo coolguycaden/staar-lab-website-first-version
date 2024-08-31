@@ -1,4 +1,4 @@
-// Credits to Materials Theory Group for design inspiration
+// Credits to Materials Theory Group (https://www.materials-theory.group/home) for design inspiration
 // Contributors: Caden Allen
 
 
@@ -6,7 +6,7 @@
 
 //https://developer.mozilla.org/en-US/
 //https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript
-
+//https://swimm.io/learn/code-documentation/code-documentation-javascript-methods-and-best-practices
 
 //Organized by the following categories (use CLTR + F and search category names)
 // HOVER DROPDOWN ICONS FUNCTIONALITY
@@ -18,31 +18,19 @@
 
 // HOVER DROPDOWN ICONS FUNCTIONALITY
 
-// :/ This section of commenting ends at the next ":/"
 
+/**
+ * Makes Navigation-bar hover boxes have opacity of 1 (to be visible)
+ * 
+ * @param {string} element - The element (item that is hovered over) to make visible
+ * 
+ * @returns {void}
+ */
+function makeVisible(element){
+    console.log(element);
+    document.getElementById(element).setAttribute("style", "opacity: 1");
+}
 
-
-//var teamButton = document.getElementById("team-button");
-
-//const dropdownButtons = document.getElementsByClassName("navigation-dropdown-button");
-
-//teamButton.addEventListener("mouseover", hovered);
-//var contextMenuForTeam = document.getElementById("team-button");
-
-
-/*window.addEventListener("DOMContentLoaded", (event) => {
-    const NAVIGATION_BUTTONS = ["team-button", "research-button"]
-    NAVIGATION_BUTTONS.forEach((element) => 
-        document.getElementsByClassName(element)[0]
-        .addEventListener("mouseover", (event) => {
-            hovered(element + "-hover");
-        })
-    );
-        
-});*/
-
-//const NAVIGATION_BUTTONS_HOVER = ["team-button-hover", "research-button-hover"];
-//NAVIGATION_BUTTONS_HOVER.forEach((element) => document.getElementById(element).setAttribute("display", "none"));
 
 // :/ End of commenting for above section
 
@@ -80,22 +68,41 @@ viewportSize.addEventListener("change", function() {
 
 /* ROTATING GALLERY */
 
-const IMAGE_LOCATION = "./gallery-pictures/img-";
+const IMAGES_LOCATION = "./assets/pictures/gallery-pictures/img-";
 const NUMBER_OF_IMAGES = 2;
 
-
+/**
+ * Makes an image gallery that changes images every 5 seconds
+ * 
+ * @requires IMAGES_LOCATION - location of images to cycle through
+ * @requires NUMBER_OF_IMAGES - number of images stored in IMAGES_LOCATION
+ * 
+ * @returns {void}
+ */
 async function rotateImages() {
+
+    //
     var i = 1;
-    while(i < NUMBER_OF_IMAGES){
-        var newImage = IMAGE_LOCATION + i;
-        console.log("new image is: " + newImage)
-        document.getElementsByClassName("rotating-image")[0].setAttribute("src", newImage + ".png");
-        //await new Promise(r => setTimeout(r, 3000));
-        i++;
+    while(i <= NUMBER_OF_IMAGES){
+
+        //Sets the new temporary image
+        var newImage = IMAGES_LOCATION + i + ".png";
+
+        //This MUST have ID set here manually to work
+        document.getElementById("rotating-image").src = newImage;
+        
+        //This forces a wait of 5 seconds between changing pictures
+        await new Promise(r => setTimeout(r, 5000));
+
+        //Resets the image gallery back to the first image
+        if(i + 1 > NUMBER_OF_IMAGES){
+            i = 1;
+        } else {
+            i++;
+        }
     }
-    //rotateImages();
+
 }
 
-rotateImages();
 
 
